@@ -1,0 +1,56 @@
+h2 {
+  position: relative;
+  top: 20px;
+  margin: 0 0 5px;
+}
+h3 {
+  position: relative;
+  top: 23px;
+  margin: 5px 0 5px;
+  left: 0px;
+}
+.units {
+  position: relative;
+  top: 25px;
+  left: 85px;
+}
+.form-group {
+  position: relative;
+}
+.btn {
+  position: relative;
+}
+.container {
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+}
+.weeklyTemp {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+.days {
+  position: relative;
+  top: 60px;
+  text-align: center;
+  font-size: 15px;
+}
+.climate {
+  font-size: 15px;
+  padding-bottom: 0%;
+  padding-top: 30px;
+}
+.icons {
+  font-size: 40px;
+  position: relative;
+  top: 55px;
+  text-align: center;
+}
+
+#temperature {
+  position: relative;
+  top: 25px;
+  left: 45px;
+  font-size: 25px;
+}
