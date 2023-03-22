@@ -47,13 +47,15 @@ h3 {
   top: 55px;
   text-align: center;
 }
-
+.openLink {
+  color: pink;
+  font-size: 10px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
 #temperature {
   position: relative;
   top: 25px;
   left: 45px;
   font-size: 25px;
-}
-.openLink {
-  font-size: 20px;
 }
