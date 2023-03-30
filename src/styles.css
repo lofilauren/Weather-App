@@ -3,11 +3,11 @@ h2 {
   top: 20px;
   margin: 0 0 5px;
 }
-h3 {
-  position: relative;
-  top: 22px;
+.icon {
+  position: fixed;
+  top: 68px;
   margin: 5px 0 5px;
-  left: 0px;
+  left: 70px;
 }
 .units {
   position: relative;
