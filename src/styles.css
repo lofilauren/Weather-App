@@ -3,11 +3,14 @@ h2 {
   top: 20px;
   margin: 0 0 5px;
 }
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 10px;
+  border: 1px solid #111;
+}
 .icon {
-  position: fixed;
-  top: 68px;
-  margin: 5px 0 5px;
-  left: 70px;
+  position: relative;
 }
 .units {
   position: relative;
@@ -48,6 +51,7 @@ h2 {
   text-align: center;
 }
 .openLink {
+  position: relative;
   color: pink;
   font-size: 10px;
   padding-bottom: 10px;
