@@ -4,18 +4,22 @@ h2 {
   margin: 0 0 5px;
 }
 .weather-app {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
   padding: 10px;
   border: 1px solid #111;
+  border-radius: 10px;
 }
 .icon {
   position: relative;
 }
 .units {
+  list-style: none;
   position: relative;
   top: 25px;
-  left: 85px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
 }
 .form-group {
   position: relative;
@@ -28,38 +32,39 @@ h2 {
   font-size: 12px;
 }
 .weeklyTemp {
-  position: relative;
   top: 50px;
   text-align: center;
   font-size: 20px;
 }
 .days {
-  position: relative;
   top: 60px;
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
 }
 .climate {
+  position: relative;
   font-size: 15px;
   padding-bottom: 0%;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 .icons {
   font-size: 40px;
-  position: relative;
   top: 55px;
   text-align: center;
 }
-.openLink {
-  position: relative;
-  color: pink;
+.OpenLink {
+  color: black;
   font-size: 10px;
-  padding-bottom: 10px;
-  padding-top: 30px;
+}
+#description {
+  font-size: 13px;
+  bottom: 15px;
 }
 #temperature {
   position: relative;
+  list-style: none;
   top: 25px;
-  left: 45px;
   font-size: 25px;
+  margin: 0;
+  padding: 0;
 }
