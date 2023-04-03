@@ -3,10 +3,7 @@ h2 {
   top: 20px;
   margin-bottom: 0;
 }
-.weather-app-wrapper {
-  max-width: 700px;
-  margin: 30px auto;
-}
+
 .weather-app {
   max-width: 700px;
   margin: 30px auto;

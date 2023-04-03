@@ -56,18 +56,11 @@ function displayWeather(response) {
 
 function search(event) {
   event.preventDefault();
-  let apiKey = "841385ef1od31f2b0293aa0a6a6tc1ff";
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let city = document.querySelector("#city-input").value;
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
 
 let searchBar = document.querySelector("#search-city");
 searchBar.addEventListener("submit", search);
-
-let iconElement = document
-  .querySelector("#icon")
-  .setAttribute(
-    "src",
-    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
-  );
