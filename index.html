@@ -24,13 +24,16 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
     <div class="weather-app">
 
       <h2 id="city">Dana Point</h2>
 
+
 <div class="float-left">
  <ul>
-  <li id="temperature"> 🌤 64</li>
+  <li id="icon"><img src="https://api.shecodes.io/weather/v1/forecast?lat=38.71667&lon=-9.13333&key=841385ef1od31f2b0293aa0a6a6tc1ff&units=metric" alt=""></li>
+  <li id="temperature"> 64</li>
 <li class="units">°C | <a href="#" id="fahrenheit-link">°F</li>  
 </ul>
 </div>
@@ -48,6 +51,7 @@
       <div class="climate">
         <div class="row">
           <div class="col-6" id="current-date">
+    
           
           </div>
           <div class="col-6">
@@ -71,7 +75,6 @@
           <div class="col-2">64°F</div>
         </div>
       </div>
-
       <div class="icons">
         <div class="row">
           <div class="col-2">🌤</div>
@@ -105,12 +108,13 @@
             02/10
           </div>
         </div>
-          <small>
+         
+        </div>
+      </div>
+       <small>
 <a class="OpenLink" href="https://github.com/lofilauren/Weather-App">Open-Source Code </a> 
         by Lauren Larsen
         </small>
-        </div>
-      
       </div>
       </div>
    <script src="src/script.js"></script>
