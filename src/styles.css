@@ -14,16 +14,19 @@ h2 {
   border: 1px solid #111;
   border-radius: 10px;
 }
-.icon {
-  top: 30px;
+#icon {
+  position: relative;
+  top: 20px;
+  right: 80px;
 }
 .units {
   list-style: none;
   position: relative;
-  left: 40px;
+  left: 70px;
   margin: 0;
   padding: 0;
   font-size: 15px;
+  top: 20px;
 }
 .form-group {
   position: relative;
@@ -71,7 +74,8 @@ h2 {
 #temperature {
   position: relative;
   list-style: none;
-  top: 25px;
+  top: 50px;
+  left: 25px;
   font-size: 25px;
   margin: 0;
   padding: 0;
