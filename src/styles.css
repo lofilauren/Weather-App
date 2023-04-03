@@ -24,9 +24,11 @@ h2 {
 }
 .form-group {
   position: relative;
+  right: 30px;
 }
 .btn {
   position: relative;
+  right: 30px;
 }
 .container {
   font-family: "Merriweather", serif;
