@@ -41,9 +41,9 @@ let month = months[now.getMonth()];
 currentDate.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 
 function displayWeather(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#city").innerHTML = response.data.city;
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
+    response.data.daily.temperature
   );
 
   document.querySelector("#humidity").innerHTML =
@@ -57,9 +57,9 @@ function displayWeather(response) {
 
 function search(event) {
   event.preventDefault();
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let apiKey = "841385ef1od31f2b0293aa0a6a6tc1ff";
   let city = document.querySelector("#city-input").value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(displayWeather);
 }
 
