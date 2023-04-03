@@ -43,16 +43,16 @@ currentDate.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.city;
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.daily.temperature
+    response.data.temperature.current
   );
 
   document.querySelector("#humidity").innerHTML =
-    response.data.daily.temperature.humidity;
+    response.data.temperature.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.daily.wind.speed
+    response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.daily.description;
+    response.data.condition.description;
 }
 
 function search(event) {
