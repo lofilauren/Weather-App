@@ -15,7 +15,7 @@ h2 {
   border-radius: 10px;
 }
 .icon {
-  position: relative;
+  top: 30px;
 }
 .units {
   list-style: none;

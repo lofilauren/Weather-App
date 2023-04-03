@@ -88,3 +88,7 @@ searchBar.addEventListener("submit", search);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let iconElement = document.querySelector("#icon");
+iconElement.setAttribute("src", response.data.condition.icon_url);
+iconElement.setAttribute("alt", response.data.condition.description);

@@ -36,17 +36,16 @@
           <div class="row">
             <div class="col-6">
               <ul>
-                <li id="icon">
-                  <img
-                    src="https://api.shecodes.io/weather/v1/forecast?lat=38.71667&lon=-9.13333&key=841385ef1od31f2b0293aa0a6a6tc1ff&units=metric"
-                    alt=""
-                  />
-                </li>
                 <li id="temperature">64</li>
                 <span class="units"
                   ><a href="#" id="celsius-link" class="active">°C </a> |
-                  <a href="#" id="fahrenheit-link">°F</a></span
-                >
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/.png"
+                  alt="{props.data.description}"
+                  class="float-left"
+                />
               </ul>
             </div>
             <div class="col-6">
