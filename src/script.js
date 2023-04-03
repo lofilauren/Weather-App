@@ -65,10 +65,17 @@ function search(event) {
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (temperature * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = fahrenheitTemperature;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
+function displaycelsiusTemperature(event) {
+  event.preventDefault;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celsiusTemperature;
+}
+
+let celsiusTemperature = null;
 
 let searchBar = document.querySelector("#search-city");
 searchBar.addEventListener("submit", search);
