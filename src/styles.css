@@ -16,20 +16,18 @@ h2 {
 }
 #icon {
   position: relative;
-  padding: 0;
-  margin: 0;
   top: 60px;
 }
 .units {
   list-style: none;
   position: relative;
-  left: 40px;
   font-size: 15px;
+  right: 30px;
 }
 .form-group {
   position: relative;
 }
-.btn {
+.#button {
   position: relative;
   right: 30px;
 }
@@ -70,10 +68,10 @@ h2 {
   top: 30px;
 }
 #temperature {
+  display: block;
   position: relative;
   list-style: none;
   top: 60px;
-  left: 80px;
   font-size: 25px;
 }
 #current-date {
