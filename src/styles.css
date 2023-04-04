@@ -16,17 +16,14 @@ h2 {
 }
 #icon {
   position: relative;
-  top: 20px;
-  right: 80px;
+  top: 30px;
+  right: 70px;
 }
 .units {
   list-style: none;
   position: relative;
-  left: 70px;
-  margin: 0;
-  padding: 0;
+  left: 90px;
   font-size: 15px;
-  top: 20px;
 }
 .form-group {
   position: relative;
@@ -41,20 +38,19 @@ h2 {
   font-size: 12px;
 }
 .weeklyTemp {
-  top: 50px;
+  top: 70px;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
 }
 .days {
   top: 60px;
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
 }
 .climate {
   position: relative;
   font-size: 15px;
-  padding-bottom: 0%;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 .icons {
   font-size: 40px;
@@ -74,8 +70,8 @@ h2 {
 #temperature {
   position: relative;
   list-style: none;
-  top: 50px;
-  left: 25px;
+  top: 40px;
+  left: 40px;
   font-size: 25px;
   margin: 0;
   padding: 0;
