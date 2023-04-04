@@ -33,20 +33,22 @@
         <div class="weather-app">
           <h2 id="city">Dana Point</h2>
 
+          <div class="col-6" id="current-date"></div>
+          <div class="col-6" id="description">Partly Cloudy</div>
+
           <div class="row">
             <div class="col-6">
               <ul>
                 <li id="temperature">64</li>
+                <img id="icon"src="https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}"/>
                 <span class="units"
                   ><a href="#" id="celsius-link" class="active">°C </a> |
                   <a href="#" id="fahrenheit-link">°F</a>
                 </span>
-                <img
-                  id="icon"
-                  src="https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}"
-                />
               </ul>
             </div>
+
+            
             <div class="col-6">
               <form class="searchBar" id="search-city">
                 <div class="float-right">
@@ -65,63 +67,14 @@
             </div>
           </div>
 
-          <div class="climate">
+          <div class="climate weather-temperature">
             <div class="row">
-              <div class="col-6" id="current-date"></div>
               <div class="col-6">
                 Humidity: <span id="humidity"></span><br />
                 Wind: <span id="wind"></span>
               </div>
             </div>
-
-            <div class="col-6" id="description">Partly Cloudy</div>
-
-            <div class="weeklyTemp">
-              <div class="row">
-                <div class="col-2">60°F</div>
-                <div class="col-2">64°F</div>
-                <div class="col-2">64°F</div>
-                <div class="col-2">64°F</div>
-                <div class="col-2">64°F</div>
-              </div>
-            </div>
           </div>
-
-          <div class="icons">
-            <div class="row">
-              <div class="col-2">🌤</div>
-              <div class="col-2">🌤</div>
-              <div class="col-2">🌤</div>
-              <div class="col-2">🌤</div>
-              <div class="col-2">🌤</div>
-            </div>
-
-            <div class="days">
-              <div class="row">
-                <div class="col-2">
-                  Monday<br />
-                  02/06
-                </div>
-                <div class="col-2">
-                  Tuesday<br />
-                  02/07
-                </div>
-                <div class="col-2">
-                  Wednesday<br />
-                  02/08
-                </div>
-                <div class="col-2">
-                  Thursday<br />
-                  02/09
-                </div>
-                <div class="col-2">
-                  Friday<br />
-                  02/10
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <small>
           <a class="OpenLink" href="https://github.com/lofilauren/Weather-App"
@@ -129,7 +82,8 @@
           </a>
           by Lauren Larsen
         </small>
-      </div>
+
+      
     </div>
     <script src="src/script.js"></script>
   </body>
