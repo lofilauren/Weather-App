@@ -40,6 +40,35 @@ let months = [
 let month = months[now.getMonth()];
 currentDate.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class ="row">`;
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col-2">
+          <div class="weather-forecast-date">
+          ${day}
+          </div>
+          <img src="https://t3.ftcdn.net/jpg/02/10/18/30/360_F_210183011_6LTcjrqlbVVKmkzRdx5z6j55GgKl82N5.jpg" alt="" width="45">
+          <br>
+          <div class="weather-forecast-temperature">
+           <span class = "weather-forecast-temperature-max">
+              18°</span>
+              <span class ="weather-forecast-temperature-min">
+                12°</span>
+          </div>
+        </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
+
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.city;
   document.querySelector("#temperature").innerHTML = Math.round(
