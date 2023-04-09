@@ -40,25 +40,25 @@ let months = [
 let month = months[now.getMonth()];
 currentDate.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 
-function displayForecast() {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class ="row">`;
   let days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
-  days.forEach(function (day) {
+  days.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       ` <div class="col-2">
           <div class="weather-forecast-date">
-          ${day}
+          ${forecastDay}
           </div>
-          <img src="https://t3.ftcdn.net/jpg/02/10/18/30/360_F_210183011_6LTcjrqlbVVKmkzRdx5z6j55GgKl82N5.jpg" alt="" width="45">
+          <img https://api.shecodes.io/weather/v1/forecast?lon={lon}&lat={lat}&key=${response.data.condition.icon_url}width="45">
           <br>
           <div class="weather-forecast-temperature">
            <span class = "weather-forecast-temperature-max">
-              18°</span>
+              ${forecastDay.temp.max}</span>
               <span class ="weather-forecast-temperature-min">
-                12°</span>
+                ${forecastDay.temp.min}</span>
           </div>
         </div>`;
   });
@@ -66,6 +66,13 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+
+function getForecast(coordinates) {
+  let forecastURL = `https://api.shecodes.io/weather/v1/forecast?lon={lon}&lat={lat}&key=${apiKey}&units=metric`;
+  axios.get(forecastURL).then(displayForecast);
+}
+
+getForecast(response.data.coordinates);
 
 displayForecast();
 

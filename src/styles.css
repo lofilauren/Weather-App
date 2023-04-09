@@ -99,3 +99,6 @@ h2 {
 .weather-forecast-temperature-min {
   opacity: 0.6;
 }
+#search-city {
+  top: 20px;
+}
