@@ -40,6 +40,14 @@ let months = [
 let month = months[now.getMonth()];
 currentDate.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.daily;
@@ -50,6 +58,7 @@ function displayForecast(response) {
       forecastHTML +
       ` <div class="col-2">
           <div class="weather-forecast-date">
+          ${formatDay(forecastDay.time)}
           </div>
           <img src=${forecastDay.condition.icon_url}>
           <br>
@@ -100,6 +109,8 @@ function displayWeather(response) {
   iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.description);
   getForecast(response.data.coordinates);
+
+  celsiusTemperature = response.data.temperature.current;
 }
 
 function search(event) {
